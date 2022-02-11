@@ -1,29 +1,45 @@
-// * Set up basic HTML ouline
-  //* Add inputs for nouns, adjectives, adverbs, etc..
-  //* Add submit button for all inputs
-  //* Create 5 buttons. 4 for separate stories and one for a reset
-    //* Buttons will store values and redirect to the story.
-      //* Create a function to hold both functions to store and redirect
+// Set up basic HTML ouline
+  // Add inputs for nouns, adjectives, adverbs, etc..
+  // Add submit button for all inputs
+  // Create 5 buttons. 4 for separate stories and one for a reset
+    // Buttons will store values and redirect to the story.
+      // Create a function to hold both functions to store and redirect
         //? function my_func() {
-        //?my_func_1();
-        //?my_func_2();
-        //?}
+          ?my_func_1();
+          ?my_func_2();
+          ?}
 
-//* Add favicon
-//* Link JS and CSS files to HTML
+// Add favicon
+// Link JS and CSS files to HTML
 
-//* Create function to call an individual story.
-//* Create a function to reset the game
+// Call init()
+// Set up the init function
+  // winner === null
 
-// * Make Cached Element References
-// * Create Event Listeners for buttons
+// Create function to call an individual story.
+// Create a function for the event listener to submit the form to JS on click
+// Create a function to reset the game
+
+//  Make Cached Element References
+  // Each button (All stories and the reset button)
+  //
+
+//  Create Event Listeners for buttons
+  // Each button needs an event listener
+    // "click"/ "keystroke?"
+
+// Create object to hold all inputs from the list
 
 // * Define variable for a win condition
   //* Add a timer to the page. If the submit button is clicked in time, winner variable = lost state.
+  // Add array of characters(string) that cannot be used. If a selected character is used, then winner = lost state
   //* If input strings.length !== (some number), winner variable = lost state, if it meets or exceeds value, winner = win state
+
+// Add a timer
 
 // * Create another JS page with each story for the madlib.
   //* Export new JS page
   //* Import new JS page
+
 
 //* Add CSS, animations, art, etc..
