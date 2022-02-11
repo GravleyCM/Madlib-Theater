@@ -7,16 +7,16 @@ const inputs = document.querySelectorAll("form#input-boxes")
 const storyBtns = document.querySelector("div#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
+const form = document.querySelector("form")
  /*----------------------------- Event Listeners -----------------------------*/ 
 storyBtns.addEventListener("click", (evt) => {
   evt.preventDefault()
   let btn = evt.target
   console.log(btn)
-  submitInputs()
+  // submitInputs()
   // makeMadlib()
 })
 
-const form = document.querySelector("form")
 document.addEventListener("submit", (evt) => {
   evt.preventDefault()
   let formData = new FormData(form)
