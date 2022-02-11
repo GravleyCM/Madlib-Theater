@@ -6,20 +6,27 @@ let winner, inputValues
 const inputs = document.querySelectorAll("form#input-boxes")
 const storyBtns = document.querySelector("div#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
+const newMadLib = document.querySelector("#story")
  /*----------------------------- Event Listeners -----------------------------*/ 
 storyBtns.addEventListener("click", (evt) => {
   evt.preventDefault()
   let btn = evt.target
   console.log(btn)
   submitInputs()
+  // makeMadlib()
 })
 
-document.getElementById("input-boxes").addEventListener("submit", (evt) => {
+const form = document.querySelector("form")
+document.addEventListener("submit", (evt) => {
   evt.preventDefault()
-  console.log(evt)
+  let formData = new FormData(form)
+  console.log("hello")
+  console.log(...formData)
 })
 
 resetBtn.addEventListener("click", () => {console.log(resetBtn)})
+
+
 /*-------------------------------- Functions --------------------------------*/
 init()
 
@@ -33,7 +40,15 @@ render()
 function render() {
 }
 
-function submitInputs() {
-  inputValues.push(`${document.getElementById("inp1").value},${document.getElementById("inp2").value},${document.getElementById("inp3").value},${document.getElementById("inp4").value},${document.getElementById("inp5").value},${document.getElementById("inp6").value},${document.getElementById("inp7").value},${document.getElementById("inp8").value},${document.getElementById("inp9").value}`)
-  console.log(inputValues)
-}
+// function submitInputs() {
+//   inputValues.push(`${document.getElementById("inp1").value},${document.getElementById("inp2").value},${document.getElementById("inp3").value},${document.getElementById("inp4").value},${document.getElementById("inp5").value},${document.getElementById("inp6").value},${document.getElementById("inp7").value},${document.getElementById("inp8").value},${document.getElementById("inp9").value}`)
+//   console.log(inputValues)
+// }
+
+// function makeMadlib() {
+//   const madLib = document.createElement("div")
+//   madLib.classList.add("story1")
+//   madLib.innerHTML =
+//   `<div class="madlib1><p>${inputValues[0]}</p></div>`
+//   newMadLib.appendChild(madLib)
+// }

@@ -18,8 +18,8 @@
 <body>
   <h1 id="title">MadLib Theater</h1>
   <form id="input-boxes">
-    <input type="text" placeholder="Name" id="inp1" class="words">
-    <input type="text" placeholder="Noun" id="inp2" class="words">
+    <input name="name" type="text" placeholder="Name" id="inp1" class="words">
+    <input name="noun" type="text" placeholder="Noun" id="inp2" class="words">
     <input type="text" placeholder="Noun" id="inp3" class="words">
     <input type="text" placeholder="Verb" id="inp4" class="words">
     <input type="text" placeholder="Verb" id="inp5" class="words">
@@ -27,15 +27,18 @@
     <input type="text" placeholder="Adjective" id="inp7" class="words">
     <input type="text" placeholder="Adverb" id="inp8" class="words">
     <input type="text" placeholder="Adverb" id="inp9" class="words">
+    <!-- <button type="submit">Submit</button> -->
     <div id="button-boxes">
-      <input type="submit" value="Story 1" class="btn btn-primary">
-      <input type="submit" value="Story 2" class="btn btn-primary">
-      <input type="submit" value="Story 3" class="btn btn-primary">
-      <input type="submit" value="Story 4" class="btn btn-primary">
+      <button type="submit" value="Story 1" class="btn btn-primary">Story 1</button>
+      <button type="submit" value="Story 2" class="btn btn-primary">Story 2</button>
+      <button type="submit" value="Story 3" class="btn btn-primary">Story 3</button>
+      <button type="submit" value="Story 4" class="btn btn-primary">Story 4</button>
     </div>
   </form>
   <div class="reset-div">
   <button class="btn btn-primary reset-button" type="reset">Reset</button>
   </div>
+
+  <p#story></p>
 </body>
 </html>

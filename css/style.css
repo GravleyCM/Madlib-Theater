@@ -48,9 +48,9 @@ margin: auto;
 justify-content: center;
 }
 
-div > input {
+div > button {
+  width: 70px;
   margin: 10px;
-  border: 1px solid red;
 }
 
 div.reset-div {
