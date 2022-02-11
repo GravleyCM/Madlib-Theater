@@ -28,7 +28,13 @@ function render() {
 }
 
 function submitInputs() {
-  resetBtn.removeAttribute("hidden")
-  inputValues = document.getElementById("inp1").value
-  console.log(inputValues)
+  let name = document.getElementById("inp1").value
+  let noun = document.getElementById("inp2").value
+  let noun2 = document.getElementById("inp3").value
+  let name = document.getElementById("inp4").value
+  let name = document.getElementById("inp5").value
+  let name = document.getElementById("inp6").value
+  let name = document.getElementById("inp7").value
+  let name = document.getElementById("inp8").value
+  let name = document.getElementById("inp9").value
 }

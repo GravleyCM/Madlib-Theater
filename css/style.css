@@ -30,10 +30,10 @@ form#input-boxes {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto 0;
+  margin: auto;
 }
 
-input {
+input.words {
   display: block;
   padding: 5px;
   width: 200px;
