@@ -13,6 +13,12 @@ storyBtns.addEventListener("click", (evt) => {
   console.log(btn)
   submitInputs()
 })
+
+document.getElementById("input-boxes").addEventListener("submit", (evt) => {
+  evt.preventDefault()
+  console.log(evt)
+})
+
 resetBtn.addEventListener("click", () => {console.log(resetBtn)})
 /*-------------------------------- Functions --------------------------------*/
 init()
@@ -29,5 +35,5 @@ function render() {
 
 function submitInputs() {
   inputValues.push(`${document.getElementById("inp1").value},${document.getElementById("inp2").value},${document.getElementById("inp3").value},${document.getElementById("inp4").value},${document.getElementById("inp5").value},${document.getElementById("inp6").value},${document.getElementById("inp7").value},${document.getElementById("inp8").value},${document.getElementById("inp9").value}`)
-  console.log(inputValues[0])
+  console.log(inputValues)
 }
