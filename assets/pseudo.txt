@@ -5,9 +5,9 @@
     // Buttons will store values and redirect to the story.
       // Create a function to hold both functions to store and redirect
         //? function my_func() {
-          ?my_func_1();
-          ?my_func_2();
-          ?}
+          my_func_1();
+          my_func_2();
+          }
 
 // Add favicon
 // Link JS and CSS files to HTML
