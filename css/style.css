@@ -24,6 +24,17 @@ h1 {
   text-align: center;
 }
 
+div.input-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0;
+  border: 1px solid red;
+}
+
 input {
   display: block;
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 10px;
 }
