@@ -10,7 +10,6 @@ const resetBtn = document.querySelector(".reset-button")
 storyBtns.addEventListener("click", (evt) => {
   let btn = evt.target
   submitInputs()
-  console.log(btn)
 })
 resetBtn.addEventListener("click", () => {console.log(resetBtn)})
 /*-------------------------------- Functions --------------------------------*/
@@ -29,4 +28,5 @@ function render() {
 function submitInputs() {
   resetBtn.removeAttribute("hidden")
   inputValues = document.getElementById("inp1").value
+  console.log(inputValues)
 }
