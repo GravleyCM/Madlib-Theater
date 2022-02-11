@@ -18,7 +18,7 @@ resetBtn.addEventListener("click", () => {console.log(resetBtn)})
 init()
 
 function init() {
-  inputValues = [null, null, null, null, null, null, null, null, null]
+  inputValues = []
   winner = null
   resetBtn.setAttribute("hidden", true)
 render()
@@ -28,13 +28,13 @@ function render() {
 }
 
 function submitInputs() {
-  let name = document.getElementById("inp1").value
-  let noun = document.getElementById("inp2").value
-  let noun2 = document.getElementById("inp3").value
-  let name = document.getElementById("inp4").value
-  let name = document.getElementById("inp5").value
-  let name = document.getElementById("inp6").value
-  let name = document.getElementById("inp7").value
-  let name = document.getElementById("inp8").value
-  let name = document.getElementById("inp9").value
+  inputValues.push(document.getElementById("inp1").value +
+  document.getElementById("inp2").value +
+  document.getElementById("inp3").value +
+  document.getElementById("inp4").value +
+  document.getElementById("inp5").value +
+  document.getElementById("inp6").value +
+  document.getElementById("inp7").value +
+  document.getElementById("inp8").value +
+  document.getElementById("inp9").value)
 }
