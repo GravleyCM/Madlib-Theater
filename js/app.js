@@ -8,7 +8,9 @@ const storyBtns = document.querySelector("div#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
  /*----------------------------- Event Listeners -----------------------------*/ 
 storyBtns.addEventListener("click", (evt) => {
+  evt.preventDefault()
   let btn = evt.target
+  console.log(btn)
   submitInputs()
 })
 resetBtn.addEventListener("click", () => {console.log(resetBtn)})

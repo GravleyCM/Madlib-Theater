@@ -41,12 +41,16 @@ input {
 }
 
 div#button-boxes {
-display: flex;
+display: grid;
+grid-template-columns: 50% 50%;
+max-width: 500px;
+margin: auto;
 justify-content: center;
 }
 
-button {
-  margin: 5px 10px;
+div > input {
+  margin: 10px;
+  border: 1px solid red;
 }
 
 div.reset-div {
