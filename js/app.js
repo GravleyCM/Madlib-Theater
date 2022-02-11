@@ -11,6 +11,7 @@ storyBtns.addEventListener("click", (evt) => {
   let btn = evt.target
   console.log(btn)
 })
+resetBtn.addEventListener("click", () => {})
 /*-------------------------------- Functions --------------------------------*/
 init()
 
