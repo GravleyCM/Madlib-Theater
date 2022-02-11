@@ -12,6 +12,8 @@
 // Add favicon
 // Link JS and CSS files to HTML
 
+// create variables winner, array(for values)
+
 // Call init()
 // Set up the init function
   // winner === null
@@ -22,13 +24,10 @@
 
 //  Make Cached Element References
   // Each button (All stories and the reset button)
-  //
 
 //  Create Event Listeners for buttons
   // Each button needs an event listener
     // "click"/ "keystroke?"
-
-// Create object to hold all inputs from the list
 
 // * Define variable for a win condition
   //* Add a timer to the page. If the submit button is clicked in time, winner variable = lost state.
