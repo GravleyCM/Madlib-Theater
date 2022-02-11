@@ -3,7 +3,7 @@
 /*-------------------------------- Variables --------------------------------*/ 
 let winner, inputValues
 /*------------------------ Cached Element References ------------------------*/
-const inputs = document.querySelector("div#input-boxes")
+const inputs = document.querySelector("form#input-boxes")
 const storyBtns = document.querySelector("div#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
  /*----------------------------- Event Listeners -----------------------------*/ 

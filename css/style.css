@@ -26,7 +26,7 @@ h1 {
   margin: 10px 0 15px 0;
 }
 
-div#input-boxes {
+form#input-boxes {
   display: flex;
   flex-direction: column;
   align-items: center;
