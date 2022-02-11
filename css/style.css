@@ -31,7 +31,6 @@ div.input-boxes {
   flex-direction: column;
   align-items: center;
   margin: auto 0;
-  border: 1px solid red;
 }
 
 input {
@@ -44,7 +43,6 @@ input {
 div.button-boxes {
 display: flex;
 justify-content: center;
-border: 1px solid red;
 }
 
 button {
@@ -56,7 +54,6 @@ div.reset-div {
   flex-direction: column;
   align-items: center;
   margin: auto 0;
-  border: 1px solid red;
 }
 
 .reset-button {

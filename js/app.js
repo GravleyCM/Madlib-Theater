@@ -14,7 +14,7 @@ init()
 function init() {
   inputValues = [null, null, null, null, null, null, null, null, null]
   winner = null
-  // resetBtn.setAttribute("hidden", true)
+  resetBtn.setAttribute("hidden", true)
 render()
 }
 
