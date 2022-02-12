@@ -13,3 +13,4 @@ https://wireframe.cc/MuondQ
 Html, CSS, JavaScript, Netlify, Bootstrap v5.1.3
 
 ### Next Steps
+Add tooltip for each input
