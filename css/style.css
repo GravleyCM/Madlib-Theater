@@ -38,6 +38,8 @@ input.words {
   padding: 5px;
   width: 200px;
   margin-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
 }
 
 div#button-boxes {
