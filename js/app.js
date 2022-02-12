@@ -4,18 +4,18 @@
 let winner, inputValues
 /*------------------------ Cached Element References ------------------------*/
 const inputs = document.querySelectorAll("form#input-boxes")
-const storyBtns = document.querySelector("div#button-boxes")
+const storyBtns = document.querySelector(".stories")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
 const form = document.querySelector("form")
  /*----------------------------- Event Listeners -----------------------------*/ 
-storyBtns.addEventListener("click", (evt) => {
-  evt.preventDefault()
-  let btn = evt.target
-  console.log(btn)
-  // submitInputs()
-  // makeMadlib()
-})
+// storyBtns.addEventListener("click", (evt) => {
+//   evt.preventDefault()
+//   let btn = evt.target
+//   console.log(btn)
+//   // submitInputs()
+//   // makeMadlib()
+// })
 
 document.addEventListener("submit", (evt) => {
   evt.preventDefault()
