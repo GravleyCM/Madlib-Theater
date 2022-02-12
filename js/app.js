@@ -27,6 +27,7 @@ const adv2 = document.getElementById("inp9")
   document.addEventListener("submit", (evt) => {
     evt.preventDefault()
     let formData = new FormData(form)
+    submitInputs()
     // console.log(...formData)
   })
   
@@ -52,7 +53,7 @@ const adv2 = document.getElementById("inp9")
     // }
     
     function submitInputs() {
-      inputValues.push(name, noun, noun2, verb, verb2, adj, adj2, adv, adv2)
+      inputValues.push(name.value, noun.value, noun2.value, verb.value, verb2.value, adj.value, adj2.value, adv.value, adv2.value)
     }
     
     function makeMadlib() {
