@@ -20,7 +20,6 @@ const form = document.querySelector("form")
 document.addEventListener("submit", (evt) => {
   evt.preventDefault()
   let formData = new FormData(form)
-  console.log("hello")
   console.log(...formData)
 })
 
