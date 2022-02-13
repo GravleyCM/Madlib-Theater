@@ -16,21 +16,21 @@ const adj2 = document.getElementById("inp7")
 const adv = document.getElementById("inp8")
 const adv2 = document.getElementById("inp9")
 /*----------------------------- Event Listeners -----------------------------*/ 
+
+document.addEventListener("submit", (evt) => {
+  evt.preventDefault()
+  let formData = new FormData(evt.target)
+  const answers = Object.fromEntries(formData)
+  console.log(answers)
+})
+
 // storyBtns.addEventListener("click", (evt) => {
-  //   evt.preventDefault()
-  //   let btn = evt.target
-  //   console.log(btn)
-  //   // submitInputs()
-  //   // makeMadlib()
-  // })
-  
-  document.addEventListener("submit", (evt) => {
-    evt.preventDefault()
-    let formData = new FormData(evt.target)
-    const answers = Object.fromEntries(formData)
-    // submitInputs()
-    console.log(answers)
-  })
+//     evt.preventDefault()
+//     let btn = evt.target
+//     console.log(btn)
+//     // submitInputs()
+//     // makeMadlib()
+//   })
   
   resetBtn.addEventListener("click", () => {console.log(resetBtn)})
   
@@ -39,7 +39,7 @@ const adv2 = document.getElementById("inp9")
   init()
   
   function init() {
-    inputValues = []
+    answers = []
     winner = null
     resetBtn.setAttribute("hidden", true)
     render()
@@ -53,20 +53,20 @@ const adv2 = document.getElementById("inp9")
     //   console.log(inputValues)
     // }
     
-    function submitInputs() {
-      inputValues.push(name.value, noun.value, noun2.value, verb.value, verb2.value, adj.value, adj2.value, adv.value, adv2.value)
-    }
+    // function submitInputs() {
+    //   inputValues.push(answers.name, noun.value, noun2.value, verb.value, verb2.value, adj.value, adj2.value, adv.value, adv2.value)
+    // }
     
-    function makeMadlib() {
-      const madLib = document.createElement("div")
-      madLib.classList.add("story1")
-      madLib.innerHTML =
-      `<div class="madlib1><p>${inputValues[0]}</p></div>`
-      newMadLib.appendChild(madLib)
-    }
+    // function makeMadlib() {
+    //   const madLib = document.createElement("div")
+    //   madLib.classList.add("story1")
+    //   madLib.innerHTML =
+    //   `<div class="madlib1><p>${inputValues[0]}</p></div>`
+    //   newMadLib.appendChild(madLib)
+    // }
 
     /*-------------------------------- Constants --------------------------------*/
-    const storyOne = `Look, if ${name} had one ${noun}, one opportunity to ${verb} everything ${name} ever wanted - one moment, would ${name} ${verb2} it or just let it ${adv} slip? Yo his palms are ${noun2}, knees weak, ${adj} arms are heavy there's vomit on his ${adj2} sweater already - mom's spaghetti. ${name}'s nervous but on the surface ${name}'s calm and ready to ${adv2} drop bombs but ${name} keeps on forgetting.`
+    const storyOne = `Look, if ${this.answers[(name.value)]} had one ${noun}, one opportunity to ${verb} everything ${name} ever wanted - one moment, would ${name} ${verb2} it or just let it ${adv} slip? Yo his palms are ${noun2}, knees weak, ${adj} arms are heavy there's vomit on his ${adj2} sweater already - mom's spaghetti. ${name}'s nervous but on the surface ${name}'s calm and ready to ${adv2} drop bombs but ${name} keeps on forgetting.`
     
     const storyTwo = `${name} the ${adj} ${noun} was walking up the street to his ${noun2} in Chicago. As ${name}  ${adv} ${verb} inside ${name} saw that all their friends had been replaced by ${adj2} garden gnomes. ${name} was so mad that they ${adv2} ${verb2} into madness and ran into the woods, never to be seen again.`
     
