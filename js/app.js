@@ -3,7 +3,7 @@ let winner, inputValues
 let answers = {}
 /*------------------------ Cached Element References ------------------------*/
 const inputs = document.querySelectorAll("form#input-boxes")
-const storyBtns = document.querySelector(".stories")
+const storyBtns = document.querySelector("#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
 const madForm = document.querySelector("form")
@@ -29,23 +29,27 @@ document.addEventListener("submit", (evt) => {
   console.log(storyOne)
   console.log(document.getElementById("story1").click)
   return answers
-
-  // for(let inputs of formData.entries()) {
-  //   inputs.forEach(function(input) {
-  //     console.log(input)
-  //     // return input
-  //   })
-  }
+}
 )
 
 // console.log(answers)
-// storyBtns.addEventListener("click", (evt) => {
-//     evt.preventDefault()
-//     let btn = evt.target
-//     console.log(btn)
-//     // submitInputs()
-//     // makeMadlib()
-//   })
+storyBtns.addEventListener("click", (evt) => {
+    evt.preventDefault()
+    let btn = evt.target
+    if(btn.id === "story1") {
+      const storyOne = `Look, if ${name.value} had one ${noun.value}, one opportunity to ${verb.value} everything ${name.value} ever wanted - one moment, would ${name.value} ${verb2.value} it or just let it ${adv.value} slip? Yo his palms are ${noun2.value}, knees weak, ${adj.value} arms are heavy there's vomit on his ${adj2.value} sweater already - mom's spaghetti. ${name.value}'s nervous but on the surface ${name.value}'s calm and ready to ${adv2.value} drop bombs but ${name.value} keeps on forgetting.`
+      console.log(storyOne)
+    } else if (btn.id === "story2") {
+      const storyTwo = `${name.value} the ${adj.value} ${noun.value} was walking up the street to his ${noun2.value} in Chicago. As ${name.value}  ${adv.value} ${verb.value} inside ${name.value} saw that all their friends had been replaced by ${adj2.value} garden gnomes. ${name.value} was so mad that they ${adv2.value} ${verb2.value} into madness and ran into the woods, never to be seen again.`
+      console.log(storyTwo)
+    } else if (btn.id === "story3") {
+      const storyThree = `After arriving at the ${adj.value} goliath village the elders ${adv.value} squabbled about allowing the ${adj2.value} ${noun.value} named ${name.value} to ${adv.value} ${verb.value} as much as they want.  The elders were worried that the sacred ${noun2.value} would be ${verb2.value} by the new resident evil of the village.`
+      console.log(storyThree)
+    } else if (btn.id === "story4") {
+      const storyFour = `Imagine for just a second a majestic ${noun.value} named ${name.value}. If it could ${adv.value} ${verb.value} through the ${adj.value} ${noun2.value}, I bet everyone here would ${adv2.value} ${verb2.value} as fast as they could back to their homes.`
+      console.log(storyFour)
+    }
+  })
   
   resetBtn.addEventListener("click", () => {console.log(resetBtn)})
   
