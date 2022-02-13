@@ -1,11 +1,12 @@
 /*-------------------------------- Variables --------------------------------*/ 
-let winner, inputValues
+let winner, inputValues 
+let answers = {}
 /*------------------------ Cached Element References ------------------------*/
 const inputs = document.querySelectorAll("form#input-boxes")
 const storyBtns = document.querySelector(".stories")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
-const form = document.querySelector("form")
+const madForm = document.querySelector("form")
 const name = document.getElementById("inp1")
 const noun = document.getElementById("inp2")
 const noun2 = document.getElementById("inp3")
@@ -20,10 +21,24 @@ const adv2 = document.getElementById("inp9")
 document.addEventListener("submit", (evt) => {
   evt.preventDefault()
   let formData = new FormData(evt.target)
-  const answers = Object.fromEntries(formData)
+  answers = Object.fromEntries(formData)
+  inputValues.push(answers)
   console.log(answers)
-})
+  submitInputs()
+  const storyOne = `Look, if ${name.value} had one ${noun.value}, one opportunity to ${verb.value} everything ${name.value} ever wanted - one moment, would ${name.value} ${verb2.value} it or just let it ${adv.value} slip? Yo his palms are ${noun2.value}, knees weak, ${adj.value} arms are heavy there's vomit on his ${adj2.value} sweater already - mom's spaghetti. ${name.value}'s nervous but on the surface ${name.value}'s calm and ready to ${adv2.value} drop bombs but ${name.value} keeps on forgetting.`
+  console.log(storyOne)
+  console.log(document.getElementById("story1").click)
+  return answers
 
+  // for(let inputs of formData.entries()) {
+  //   inputs.forEach(function(input) {
+  //     console.log(input)
+  //     // return input
+  //   })
+  }
+)
+
+// console.log(answers)
 // storyBtns.addEventListener("click", (evt) => {
 //     evt.preventDefault()
 //     let btn = evt.target
@@ -39,7 +54,7 @@ document.addEventListener("submit", (evt) => {
   init()
   
   function init() {
-    answers = []
+    inputValues = []
     winner = null
     resetBtn.setAttribute("hidden", true)
     render()
@@ -47,15 +62,17 @@ document.addEventListener("submit", (evt) => {
   
   function render() {
   }
+
+  
   
   // function submitInputs() {
     //   inputValues.push(`${document.getElementById("inp1").value},${document.getElementById("inp2").value},${document.getElementById("inp3").value},${document.getElementById("inp4").value},${document.getElementById("inp5").value},${document.getElementById("inp6").value},${document.getElementById("inp7").value},${document.getElementById("inp8").value},${document.getElementById("inp9").value}`)
     //   console.log(inputValues)
     // }
     
-    // function submitInputs() {
-    //   inputValues.push(answers.name, noun.value, noun2.value, verb.value, verb2.value, adj.value, adj2.value, adv.value, adv2.value)
-    // }
+    function submitInputs() {
+      console.log(answers)
+    }
     
     // function makeMadlib() {
     //   const madLib = document.createElement("div")
@@ -66,7 +83,7 @@ document.addEventListener("submit", (evt) => {
     // }
 
     /*-------------------------------- Constants --------------------------------*/
-    const storyOne = `Look, if ${this.answers[(name.value)]} had one ${noun}, one opportunity to ${verb} everything ${name} ever wanted - one moment, would ${name} ${verb2} it or just let it ${adv} slip? Yo his palms are ${noun2}, knees weak, ${adj} arms are heavy there's vomit on his ${adj2} sweater already - mom's spaghetti. ${name}'s nervous but on the surface ${name}'s calm and ready to ${adv2} drop bombs but ${name} keeps on forgetting.`
+    // const storyOne = `Look, if ${name} had one ${answers.noun}, one opportunity to ${verb} everything ${name} ever wanted - one moment, would ${name} ${verb2} it or just let it ${adv} slip? Yo his palms are ${noun2}, knees weak, ${adj} arms are heavy there's vomit on his ${adj2} sweater already - mom's spaghetti. ${name}'s nervous but on the surface ${name}'s calm and ready to ${adv2} drop bombs but ${name} keeps on forgetting.`
     
     const storyTwo = `${name} the ${adj} ${noun} was walking up the street to his ${noun2} in Chicago. As ${name}  ${adv} ${verb} inside ${name} saw that all their friends had been replaced by ${adj2} garden gnomes. ${name} was so mad that they ${adv2} ${verb2} into madness and ran into the woods, never to be seen again.`
     
