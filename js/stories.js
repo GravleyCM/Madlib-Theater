@@ -5,10 +5,3 @@
 // let storyThree = `After arriving at the ${adj} goliath village the elders ${adv} squabbled about allowing the ${adj2} ${noun} named ${name} to ${adv} ${verb} as much as they want.  The elders were worried that the sacred ${noun2} would be ${verb2} by the new resident evil of the village.`
 
 // let storyFour = `Imagine for just a second a majestic ${noun} named ${name}. If it could ${adv} ${verb} through the ${adj} ${noun2}, I bet everyone here would ${adv2} ${verb2} as fast as they could back to their homes.`
-
-// export {
-//   storyOne,
-//   storyTwo,
-//   storyThree,
-//   storyFour
-// }

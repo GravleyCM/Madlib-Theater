@@ -1,6 +1,7 @@
+ /*-------------------------------- Constants --------------------------------*/
+
 /*-------------------------------- Variables --------------------------------*/ 
-let winner, inputValues 
-let answers = {}
+let winner, inputValues
 /*------------------------ Cached Element References ------------------------*/
 const inputs = document.querySelectorAll("form#input-boxes")
 const storyBtns = document.querySelector("#button-boxes")
@@ -17,26 +18,11 @@ const adj2 = document.getElementById("inp7")
 const adv = document.getElementById("inp8")
 const adv2 = document.getElementById("inp9")
 /*----------------------------- Event Listeners -----------------------------*/ 
-
-// document.addEventListener("submit", (evt) => {
-//   evt.preventDefault()
-//   let formData = new FormData(evt.target)
-//   answers = Object.fromEntries(formData)
-//   inputValues.push(answers)
-//   console.log(answers)
-//   submitInputs()
-//   const storyOne = `Look, if ${name.value} had one ${noun.value}, one opportunity to ${verb.value} everything ${name.value} ever wanted - one moment, would ${name.value} ${verb2.value} it or just let it ${adv.value} slip? Yo his palms are ${noun2.value}, knees weak, ${adj.value} arms are heavy there's vomit on his ${adj2.value} sweater already - mom's spaghetti. ${name.value}'s nervous but on the surface ${name.value}'s calm and ready to ${adv2.value} drop bombs but ${name.value} keeps on forgetting.`
-//   console.log(storyOne)
-//   console.log(document.getElementById("story1").click)
-//   return answers
-// }
-// )
-
 storyBtns.addEventListener("click", (evt) => {
     evt.preventDefault()
     let btn = evt.target
     if(btn.id === "story1") {
-      const storyOne = `Look, if ${name.value} had one ${noun.value}, one opportunity to ${verb.value} everything ${name.value} ever wanted - one moment, would ${name.value} ${verb2.value} it or just let it ${adv.value} slip? Yo his palms are ${noun2.value}, knees weak, ${adj.value} arms are heavy there's vomit on his ${adj2.value} sweater already - mom's spaghetti. ${name.value}'s nervous but on the surface ${name.value}'s calm and ready to ${adv2.value} drop bombs but ${name.value} keeps on forgetting.`
+      const storyOne = `Look, if ${name.value} had one ${noun.value}, one opportunity to ${verb.value} everything ${name.value} ever wanted - one moment, would ${name.value} ${verb2.value} it or just let it ${adv.value} slip? Yo his palms are ${adj2.value}, knees weak, ${adj.value} arms are heavy there's vomit on his ${noun2.value} sweater already - mom's spaghetti. ${name.value}'s nervous but on the surface ${name.value}'s calm and ready to ${adv2.value} drop bombs but ${name.value} keeps on forgetting.`
       console.log(storyOne)
     } else if (btn.id === "story2") {
       const storyTwo = `${name.value} the ${adj.value} ${noun.value} was walking up the street to his ${noun2.value} in Chicago. As ${name.value}  ${adv.value} ${verb.value} inside ${name.value} saw that all their friends had been replaced by ${adj2.value} garden gnomes. ${name.value} was so mad that they ${adv2.value} ${verb2.value} into madness and ran into the woods, never to be seen again.`
@@ -68,10 +54,7 @@ storyBtns.addEventListener("click", (evt) => {
 
   
   
-  // function submitInputs() {
-    //   inputValues.push(`${document.getElementById("inp1").value},${document.getElementById("inp2").value},${document.getElementById("inp3").value},${document.getElementById("inp4").value},${document.getElementById("inp5").value},${document.getElementById("inp6").value},${document.getElementById("inp7").value},${document.getElementById("inp8").value},${document.getElementById("inp9").value}`)
-    //   console.log(inputValues)
-    // }
+ 
     
     function submitInputs() {
       console.log(answers)
@@ -84,12 +67,3 @@ storyBtns.addEventListener("click", (evt) => {
     //   `<div class="madlib1><p>${inputValues[0]}</p></div>`
     //   newMadLib.appendChild(madLib)
     // }
-
-    /*-------------------------------- Constants --------------------------------*/
-    // const storyOne = `Look, if ${name} had one ${answers.noun}, one opportunity to ${verb} everything ${name} ever wanted - one moment, would ${name} ${verb2} it or just let it ${adv} slip? Yo his palms are ${noun2}, knees weak, ${adj} arms are heavy there's vomit on his ${adj2} sweater already - mom's spaghetti. ${name}'s nervous but on the surface ${name}'s calm and ready to ${adv2} drop bombs but ${name} keeps on forgetting.`
-    
-    const storyTwo = `${name} the ${adj} ${noun} was walking up the street to his ${noun2} in Chicago. As ${name}  ${adv} ${verb} inside ${name} saw that all their friends had been replaced by ${adj2} garden gnomes. ${name} was so mad that they ${adv2} ${verb2} into madness and ran into the woods, never to be seen again.`
-    
-    const storyThree = `After arriving at the ${adj} goliath village the elders ${adv} squabbled about allowing the ${adj2} ${noun} named ${name} to ${adv} ${verb} as much as they want.  The elders were worried that the sacred ${noun2} would be ${verb2} by the new resident evil of the village.`
-    
-    const storyFour = `Imagine for just a second a majestic ${noun} named ${name}. If it could ${adv} ${verb} through the ${adj} ${noun2}, I bet everyone here would ${adv2} ${verb2} as fast as they could back to their homes.`
