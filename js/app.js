@@ -18,21 +18,20 @@ const adv = document.getElementById("inp8")
 const adv2 = document.getElementById("inp9")
 /*----------------------------- Event Listeners -----------------------------*/ 
 
-document.addEventListener("submit", (evt) => {
-  evt.preventDefault()
-  let formData = new FormData(evt.target)
-  answers = Object.fromEntries(formData)
-  inputValues.push(answers)
-  console.log(answers)
-  submitInputs()
-  const storyOne = `Look, if ${name.value} had one ${noun.value}, one opportunity to ${verb.value} everything ${name.value} ever wanted - one moment, would ${name.value} ${verb2.value} it or just let it ${adv.value} slip? Yo his palms are ${noun2.value}, knees weak, ${adj.value} arms are heavy there's vomit on his ${adj2.value} sweater already - mom's spaghetti. ${name.value}'s nervous but on the surface ${name.value}'s calm and ready to ${adv2.value} drop bombs but ${name.value} keeps on forgetting.`
-  console.log(storyOne)
-  console.log(document.getElementById("story1").click)
-  return answers
-}
-)
+// document.addEventListener("submit", (evt) => {
+//   evt.preventDefault()
+//   let formData = new FormData(evt.target)
+//   answers = Object.fromEntries(formData)
+//   inputValues.push(answers)
+//   console.log(answers)
+//   submitInputs()
+//   const storyOne = `Look, if ${name.value} had one ${noun.value}, one opportunity to ${verb.value} everything ${name.value} ever wanted - one moment, would ${name.value} ${verb2.value} it or just let it ${adv.value} slip? Yo his palms are ${noun2.value}, knees weak, ${adj.value} arms are heavy there's vomit on his ${adj2.value} sweater already - mom's spaghetti. ${name.value}'s nervous but on the surface ${name.value}'s calm and ready to ${adv2.value} drop bombs but ${name.value} keeps on forgetting.`
+//   console.log(storyOne)
+//   console.log(document.getElementById("story1").click)
+//   return answers
+// }
+// )
 
-// console.log(answers)
 storyBtns.addEventListener("click", (evt) => {
     evt.preventDefault()
     let btn = evt.target
