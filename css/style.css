@@ -28,7 +28,7 @@ body {
 }
 
 h1 {
-  color: #335081;
+  color: #4762FF;
   text-align: center;
   font-size: 40px;
   margin-top: 50px;
@@ -74,11 +74,15 @@ div.reset-div {
 .reset-button {
   display: flex;
   justify-content: center;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 #story {
   font-size: 30px;
+  color: #4762FF;
   width: 50%;
   margin: auto;
+  margin-bottom: 20px;
   text-align: center;
 }
