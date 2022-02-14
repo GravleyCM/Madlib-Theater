@@ -1,9 +1,10 @@
  /*-------------------------------- Constants --------------------------------*/
-
+let startTime = 20
 /*-------------------------------- Variables --------------------------------*/ 
 let winner
 /*------------------------ Cached Element References ------------------------*/
 // const inputs = document.querySelectorAll("form#input-boxes")
+const countDown = document.getElementById("timer")
 const storyBtns = document.querySelector("#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
@@ -58,4 +59,15 @@ function render() {
 
 function reset() {
   render()
+}
+
+function timer() {
+  setTimeout
+}
+
+setInterval(getCountDown, 1000)
+
+function getCountDown () {
+  startTime--
+  countDown.innerHTML = `${startTime}`
 }

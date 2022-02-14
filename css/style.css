@@ -20,6 +20,11 @@ body {
   margin: 0;
 }
 
+#timer {
+  color: pink;
+  font-size: 30px;
+}
+
 #page-content {
   margin-top: 20px;
   margin: auto;
