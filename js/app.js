@@ -2,16 +2,17 @@
 let startTime = 11
 
 /*-------------------------------- Variables --------------------------------*/ 
-let winner
+let winner, countingDown
+
 /*------------------------ Cached Element References ------------------------*/
 const wholePage = document.querySelector("#page-content")
-const countDown = document.getElementById("timer")
-const title = document.getElementById("title")
 const storyBtns = document.querySelector("#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
-const startBtn = document.getElementById("start")
 const newMadLib = document.querySelector("#story")
 const madForm = document.querySelector("form")
+const startBtn = document.getElementById("start")
+const countDown = document.getElementById("timer")
+const title = document.getElementById("title")
 const name = document.getElementById("inp1")
 const noun = document.getElementById("inp2")
 const noun2 = document.getElementById("inp3")
@@ -47,7 +48,7 @@ storyBtns.addEventListener("click", (evt) => {
 
   startBtn.addEventListener("click", (evt) => {
     evt.preventDefault()
-    const countingDown = setInterval(getCountDown, 1000)
+    countingDown = setInterval(getCountDown, 1000)
   })
   
   resetBtn.addEventListener("click", (evt) => {
