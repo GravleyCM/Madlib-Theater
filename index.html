@@ -16,27 +16,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1 title="Madlib Studio" id="title">MadLib Theater</h1>
-  <form name="form" id="input-boxes">
-    <input name="name" type="text" placeholder="Name" id="inp1" class="words">
-    <input name="noun" type="text" placeholder="Noun" id="inp2" class="words">
-    <input name="noun2" type="text" placeholder="Noun" id="inp3" class="words">
-    <input name="verb" type="text" placeholder="Verb" id="inp4" class="words">
-    <input name="verb2" type="text" placeholder="Verb" id="inp5" class="words">
-    <input name="adj" type="text" placeholder="Adjecive" id="inp6" class="words">
-    <input name="adj2" type="text" placeholder="Adjective" id="inp7" class="words">
-    <input name="adv" type="text" placeholder="Adverb" id="inp8" class="words">
-    <input name="adv2" type="text" placeholder="Adverb" id="inp9" class="words">
-    <div id="button-boxes">
-      <button id="story1"type="submit" class="btn btn-primary stories">Story 1</button>
-      <button id="story2"type="submit" class="btn btn-primary stories">Story 2</button>
-      <button id="story3"type="submit" class="btn btn-primary stories">Story 3</button>
-      <button id="story4"type="submit" class="btn btn-primary stories">Story 4</button>
+  <div id="page-content">
+    <h1 title="Madlib Studio" id="title">MadLib Theater</h1>
+    <form name="form" id="input-boxes">
+      <input name="name" type="text" placeholder="Name" id="inp1" class="words">
+      <input name="noun" type="text" placeholder="Noun" id="inp2" class="words">
+      <input name="noun2" type="text" placeholder="Noun" id="inp3" class="words">
+      <input name="verb" type="text" placeholder="Verb" id="inp4" class="words">
+      <input name="verb2" type="text" placeholder="Verb" id="inp5" class="words">
+      <input name="adj" type="text" placeholder="Adjecive" id="inp6" class="words">
+      <input name="adj2" type="text" placeholder="Adjective" id="inp7" class="words">
+      <input name="adv" type="text" placeholder="Adverb" id="inp8" class="words">
+      <input name="adv2" type="text" placeholder="Adverb" id="inp9" class="words">
+      <div id="button-boxes">
+        <button id="story1"type="submit" class="btn btn-primary stories">Story 1</button>
+        <button id="story2"type="submit" class="btn btn-primary stories">Story 2</button>
+        <button id="story3"type="submit" class="btn btn-primary stories">Story 3</button>
+        <button id="story4"type="submit" class="btn btn-primary stories">Story 4</button>
+      </div>
+    </form>
+    <div id="story"></div>
+    <div class="reset-div">
+      <button class="btn btn-primary reset-button" type="reset">Reset</button>
     </div>
-  </form>
-  <div id="story"></div>
-  <div class="reset-div">
-    <button class="btn btn-primary reset-button" type="reset">Reset</button>
   </div>
 </body>
 </html>

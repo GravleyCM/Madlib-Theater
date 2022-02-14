@@ -3,7 +3,7 @@
 /*-------------------------------- Variables --------------------------------*/ 
 let winner
 /*------------------------ Cached Element References ------------------------*/
-const inputs = document.querySelectorAll("form#input-boxes")
+// const inputs = document.querySelectorAll("form#input-boxes")
 const storyBtns = document.querySelector("#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
@@ -42,7 +42,7 @@ storyBtns.addEventListener("click", (evt) => {
   resetBtn.addEventListener("click", () => init(), reset())
   
   
-  /*-------------------------------- Functions --------------------------------*/
+/*-------------------------------- Functions --------------------------------*/
 init()
   
 function init() {
