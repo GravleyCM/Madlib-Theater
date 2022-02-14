@@ -52,11 +52,11 @@ input.words {
 }
 
 div#button-boxes {
-display: grid;
-grid-template-columns: 50% 50%;
-max-width: 500px;
-margin: auto;
-justify-content: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 500px;
+  margin: auto;
+  justify-content: center;
 }
 
 div > button {
