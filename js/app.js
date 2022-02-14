@@ -1,7 +1,7 @@
  /*-------------------------------- Constants --------------------------------*/
 
 /*-------------------------------- Variables --------------------------------*/ 
-let winner, inputValues
+let winner
 /*------------------------ Cached Element References ------------------------*/
 const inputs = document.querySelectorAll("form#input-boxes")
 const storyBtns = document.querySelector("#button-boxes")
@@ -34,36 +34,29 @@ storyBtns.addEventListener("click", (evt) => {
       const storyFour = `Imagine for just a second a majestic ${noun.value} named ${name.value}. If it could ${adv.value} ${verb.value} through the ${adj.value} ${noun2.value}, I bet everyone here would ${adv2.value} ${verb2.value} as fast as they could back to their homes.`
       console.log(storyFour)
     }
+    resetBtn.removeAttribute("hidden")
+    makeMadlib()
   })
   
-  resetBtn.addEventListener("click", () => {console.log(resetBtn)})
+  resetBtn.addEventListener("click", () => init())
   
   
   /*-------------------------------- Functions --------------------------------*/
-  init()
+init()
   
-  function init() {
-    inputValues = []
-    winner = null
-    resetBtn.setAttribute("hidden", true)
-    render()
-  }
-  
-  function render() {
-  }
+function init() {
+  winner = null
+  resetBtn.setAttribute("hidden", true)
+}
 
-  
-  
- 
+// function submitInputs() {
+//     console.log(answers)
+// }
     
-    function submitInputs() {
-      console.log(answers)
-    }
-    
-    // function makeMadlib() {
-    //   const madLib = document.createElement("div")
-    //   madLib.classList.add("story1")
-    //   madLib.innerHTML =
-    //   `<div class="madlib1><p>${inputValues[0]}</p></div>`
-    //   newMadLib.appendChild(madLib)
-    // }
+function makeMadlib() {
+  const madLib = document.createElement("div")
+  madLib.classList.add("story1")
+  madLib.innerHTML =
+  `<div class="madlib1>${".story1"}</div>`
+  newMadLib.append(madLib)
+}
