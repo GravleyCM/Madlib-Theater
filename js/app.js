@@ -17,12 +17,14 @@ const adj = document.getElementById("inp6")
 const adj2 = document.getElementById("inp7")
 const adv = document.getElementById("inp8")
 const adv2 = document.getElementById("inp9")
+
 /*----------------------------- Event Listeners -----------------------------*/ 
 storyBtns.addEventListener("click", (evt) => {
     evt.preventDefault()
     let btn = evt.target
     if(btn.id === "story1") {
       const storyOne = `Look, if ${name.value} had one ${noun.value}, one opportunity to ${verb.value} everything ${name.value} ever wanted - one moment, would ${name.value} ${verb2.value} it or just let it ${adv.value} slip? Yo his palms are ${adj2.value}, knees weak, ${adj.value} arms are heavy there's vomit on his ${noun2.value} sweater already - mom's spaghetti. ${name.value}'s nervous but on the surface ${name.value}'s calm and ready to ${adv2.value} drop bombs but ${name.value} keeps on forgetting.`
+      newMadLib.append(`${storyOne}`)
       console.log(storyOne)
     } else if (btn.id === "story2") {
       const storyTwo = `${name.value} the ${adj.value} ${noun.value} was walking up the street to his ${noun2.value} in Chicago. As ${name.value}  ${adv.value} ${verb.value} inside ${name.value} saw that all their friends had been replaced by ${adj2.value} garden gnomes. ${name.value} was so mad that they ${adv2.value} ${verb2.value} into madness and ran into the woods, never to be seen again.`
@@ -35,12 +37,14 @@ storyBtns.addEventListener("click", (evt) => {
       console.log(storyFour)
     }
     resetBtn.removeAttribute("hidden")
-    madForm.setAttribute("hidden", true)
+    // madForm.setAttribute("hidden", true)
+    // function makeMadLib() {
+    //   const madOne = `${"story1"}`
+    //   newMadLib.appendChild(madOne)
+    // }
   })
   
-  resetBtn.addEventListener("click", () => 
-  reset()
-  )
+  resetBtn.addEventListener("click", () => reset())
   
   
   /*-------------------------------- Functions --------------------------------*/
@@ -56,13 +60,22 @@ function render() {
   makeMadlib()
 }
 
-function makeMadlib(story) {
-  const madLib = document.createElement("div")
-  madLib.classList.add("mad-one")
-  madLib.innerHTML =
-  `<div class="madlib1>${story.text}</div>`
-  newMadLib.append(madLib)
-}
+// function makeMadLib() {
+//   madOne = `${this.story1}`
+//   newMadLib.append(madOne)
+// }
+
+// const madOne = "story1"
+
+// newMadLib.append(madOne)
+
+// function makeMadlib(story) {
+//   const madLib = document.createElement("div")
+//   madLib.classList.add("mad-text")
+//   madLib.innerHTML =
+//   `<div class="madlib1>${story.text}</div>`
+//   newMadLib.append(madLib)
+// }
 
 function reset() {
   init()
