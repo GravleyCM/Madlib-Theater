@@ -39,6 +39,11 @@ h1 {
   margin-bottom: 250px;
 }
 
+#start {
+  display: grid;
+  margin: auto;
+}
+
 form#input-boxes {
   display: flex;
   flex-direction: column;

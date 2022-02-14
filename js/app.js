@@ -1,6 +1,6 @@
  /*-------------------------------- Constants --------------------------------*/
 let startTime = 11
-const countingDown = setInterval(getCountDown, 1000)
+// const countingDown = setInterval(getCountDown, 1000)
 
 /*-------------------------------- Variables --------------------------------*/ 
 let winner
@@ -10,6 +10,7 @@ const countDown = document.getElementById("timer")
 const title = document.getElementById("title")
 const storyBtns = document.querySelector("#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
+const startBtn = document.getElementById("start")
 const newMadLib = document.querySelector("#story")
 const madForm = document.querySelector("form")
 const name = document.getElementById("inp1")
@@ -43,6 +44,10 @@ storyBtns.addEventListener("click", (evt) => {
     countDown.setAttribute("hidden", true)
     resetBtn.removeAttribute("hidden")
     clearInterval(countingDown)
+  })
+
+  startBtn.addEventListener("click", (evt) => {
+    evt.preventDefault()
   })
   
   resetBtn.addEventListener("click", (evt) => {
