@@ -3,7 +3,7 @@ let startTime = 5
 /*-------------------------------- Variables --------------------------------*/ 
 let winner
 /*------------------------ Cached Element References ------------------------*/
-// const inputs = document.querySelectorAll("form#input-boxes")
+const wholePage = document.querySelector("#page-content")
 const countDown = document.getElementById("timer")
 const storyBtns = document.querySelector("#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
@@ -37,7 +37,9 @@ storyBtns.addEventListener("click", (evt) => {
       newMadLib.append(`${storyFour}`)
     }
     madForm.setAttribute("hidden", true)
+    countDown.setAttribute("hidden", true)
     resetBtn.removeAttribute("hidden")
+    clearInterval(countingDown)
   })
   
   resetBtn.addEventListener("click", () => init(), reset())
@@ -73,4 +75,14 @@ function getCountDown () {
   if(startTime === 0) {
     clearInterval(countingDown)
   }
+  changeWin()
 }
+
+function changeWin () {
+  if (startTime === 0)  {
+    winner = "lost"
+    madForm.setAttribute("hidden", true)
+  }
+}
+
+console.log(winner)
