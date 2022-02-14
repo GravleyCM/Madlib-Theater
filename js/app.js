@@ -35,10 +35,12 @@ storyBtns.addEventListener("click", (evt) => {
       console.log(storyFour)
     }
     resetBtn.removeAttribute("hidden")
-    makeMadlib()
+    madForm.setAttribute("hidden", true)
   })
   
-  resetBtn.addEventListener("click", () => init())
+  resetBtn.addEventListener("click", () => 
+  reset()
+  )
   
   
   /*-------------------------------- Functions --------------------------------*/
@@ -49,14 +51,20 @@ function init() {
   resetBtn.setAttribute("hidden", true)
 }
 
-// function submitInputs() {
-//     console.log(answers)
-// }
-    
-function makeMadlib() {
+function render() {
+  newMadLib.innerHTML = ""
+  makeMadlib()
+}
+
+function makeMadlib(story) {
   const madLib = document.createElement("div")
-  madLib.classList.add("story1")
+  madLib.classList.add("mad-one")
   madLib.innerHTML =
-  `<div class="madlib1>${".story1"}</div>`
+  `<div class="madlib1>${story.text}</div>`
   newMadLib.append(madLib)
+}
+
+function reset() {
+  init()
+  madForm.removeAttribute("hidden")
 }
