@@ -1,5 +1,5 @@
  /*-------------------------------- Constants --------------------------------*/
-let startTime = 20
+let startTime = 5
 /*-------------------------------- Variables --------------------------------*/ 
 let winner
 /*------------------------ Cached Element References ------------------------*/
@@ -65,9 +65,12 @@ function timer() {
   setTimeout
 }
 
-setInterval(getCountDown, 1000)
+const countingDown = setInterval(getCountDown, 1000)
 
 function getCountDown () {
   startTime--
   countDown.innerHTML = `${startTime}`
+  if(startTime === 0) {
+    clearInterval(countingDown)
+  }
 }
