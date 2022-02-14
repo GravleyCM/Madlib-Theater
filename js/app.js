@@ -1,5 +1,5 @@
  /*-------------------------------- Constants --------------------------------*/
-let startTime = 10
+let startTime = 11
 const countingDown = setInterval(getCountDown, 1000)
 
 /*-------------------------------- Variables --------------------------------*/ 
@@ -49,7 +49,6 @@ storyBtns.addEventListener("click", (evt) => {
     evt.preventDefault()
     resetMadLib()
     render()
-    getCountDown()
   })
   
   
@@ -70,7 +69,7 @@ function render() {
 
 function resetMadLib() {
   render()
-  madForm.reset()
+  location.reload()
 }
 
 
@@ -88,5 +87,6 @@ function changeWin () {
     winner = "lost"
     madForm.setAttribute("hidden", true)
     title.innerHTML = `YOU WERE TOO SLOW, PLEASE TRY AGAIN`
+    resetBtn.removeAttribute("hidden")
   }
 }
