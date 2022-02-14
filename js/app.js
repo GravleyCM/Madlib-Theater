@@ -1,6 +1,5 @@
  /*-------------------------------- Constants --------------------------------*/
 let startTime = 11
-// const countingDown = setInterval(getCountDown, 1000)
 
 /*-------------------------------- Variables --------------------------------*/ 
 let winner
@@ -48,6 +47,7 @@ storyBtns.addEventListener("click", (evt) => {
 
   startBtn.addEventListener("click", (evt) => {
     evt.preventDefault()
+    const countingDown = setInterval(getCountDown, 1000)
   })
   
   resetBtn.addEventListener("click", (evt) => {
