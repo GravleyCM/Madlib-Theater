@@ -1,5 +1,7 @@
  /*-------------------------------- Constants --------------------------------*/
-let startTime = 5
+let startTime = 10
+const countingDown = setInterval(getCountDown, 1000)
+
 /*-------------------------------- Variables --------------------------------*/ 
 let winner
 /*------------------------ Cached Element References ------------------------*/
@@ -43,7 +45,12 @@ storyBtns.addEventListener("click", (evt) => {
     clearInterval(countingDown)
   })
   
-  resetBtn.addEventListener("click", () => reset(), init())
+  resetBtn.addEventListener("click", (evt) => {
+    evt.preventDefault()
+    resetMadLib()
+    render()
+    getCountDown()
+  })
   
   
 /*-------------------------------- Functions --------------------------------*/
@@ -52,6 +59,7 @@ init()
 function init() {
   winner = null
   render()
+  getCountDown()
 }
 
 function render() {
@@ -60,15 +68,11 @@ function render() {
   newMadLib.innerHTML = ""
 }
 
-function reset() {
+function resetMadLib() {
   render()
+  madForm.reset()
 }
 
-function timer() {
-  setTimeout
-}
-
-// const countingDown = setInterval(getCountDown, 1000)
 
 function getCountDown () {
   startTime--
