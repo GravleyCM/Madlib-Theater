@@ -47,31 +47,15 @@ init()
   
 function init() {
   winner = null
-  resetBtn.setAttribute("hidden", true)
+  render()
 }
 
 function render() {
+  madForm.removeAttribute("hidden")
+  resetBtn.setAttribute("hidden", true)
   newMadLib.innerHTML = ""
 }
 
-// function makeMadLib() {
-//   madOne = `${this.story1}`
-//   newMadLib.append(madOne)
-// }
-
-// const madOne = "story1"
-
-// newMadLib.append(madOne)
-
-// function makeMadlib(story) {
-//   const madLib = document.createElement("div")
-//   madLib.classList.add("mad-text")
-//   madLib.innerHTML =
-//   `<div class="madlib1>${story.text}</div>`
-//   newMadLib.append(madLib)
-// }
-
 function reset() {
-  init()
-  madForm.removeAttribute("hidden")
+  render()
 }

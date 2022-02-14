@@ -16,3 +16,20 @@
     //   inputValues.push(`${document.getElementById("inp1").value},${document.getElementById("inp2").value},${document.getElementById("inp3").value},${document.getElementById("inp4").value},${document.getElementById("inp5").value},${document.getElementById("inp6").value},${document.getElementById("inp7").value},${document.getElementById("inp8").value},${document.getElementById("inp9").value}`)
     //   console.log(inputValues)
     // }
+
+    // newMadLib.append(madOne)
+
+// function makeMadlib(story) {
+//   const madLib = document.createElement("div")
+//   madLib.classList.add("mad-text")
+//   madLib.innerHTML =
+//   `<div class="madlib1>${story.text}</div>`
+//   newMadLib.append(madLib)
+// }
+
+// function makeMadLib() {
+//   madOne = `${this.story1}`
+//   newMadLib.append(madOne)
+// }
+
+// const madOne = "story1"
