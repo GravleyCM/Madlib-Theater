@@ -5,6 +5,7 @@ let winner
 /*------------------------ Cached Element References ------------------------*/
 const wholePage = document.querySelector("#page-content")
 const countDown = document.getElementById("timer")
+const title = document.getElementById("title")
 const storyBtns = document.querySelector("#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
@@ -42,7 +43,7 @@ storyBtns.addEventListener("click", (evt) => {
     clearInterval(countingDown)
   })
   
-  resetBtn.addEventListener("click", () => init(), reset())
+  resetBtn.addEventListener("click", () => reset(), init())
   
   
 /*-------------------------------- Functions --------------------------------*/
@@ -67,7 +68,7 @@ function timer() {
   setTimeout
 }
 
-const countingDown = setInterval(getCountDown, 1000)
+// const countingDown = setInterval(getCountDown, 1000)
 
 function getCountDown () {
   startTime--
@@ -82,7 +83,6 @@ function changeWin () {
   if (startTime === 0)  {
     winner = "lost"
     madForm.setAttribute("hidden", true)
+    title.innerHTML = `YOU WERE TOO SLOW, PLEASE TRY AGAIN`
   }
 }
-
-console.log(winner)
