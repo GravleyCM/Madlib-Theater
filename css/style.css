@@ -76,6 +76,10 @@ div#button-boxes {
   font-family: 'Lobster', cursive, sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 div > button {
   width: 90px;
   margin: 10px;

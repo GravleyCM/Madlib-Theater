@@ -10,7 +10,6 @@ const storyBtns = document.querySelector("#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
 const madForm = document.querySelector("form")
-const inputs = document.querySelectorAll(".words")
 const startBtn = document.getElementById("start")
 const countDown = document.getElementById("timer")
 const title = document.getElementById("title")
@@ -46,6 +45,7 @@ storyBtns.addEventListener("click", (evt) => {
   }
   madForm.setAttribute("hidden", true)
   countDown.setAttribute("hidden", true)
+  startBtn.setAttribute("hidden", true)
   resetBtn.removeAttribute("hidden")
   clearInterval(countingDown)
 })
@@ -53,8 +53,11 @@ storyBtns.addEventListener("click", (evt) => {
 startBtn.addEventListener("click", (evt) => {
   evt.preventDefault()
   countingDown = setInterval(getCountDown, 1000)
-  for(i = 0; i < madForm.length; i++) {
+  for(let i = 0; i < madForm.length; i++) {
     madForm[i].disabled = false
+  }
+  for(let i = 0; i < storyBtns.length; i++) {
+    storyBtns[i].disabled = false
   }
 })
   
@@ -74,6 +77,9 @@ function init() {
   getCountDown()
   for (let i = 0; i < madForm.length; i++) {
     madForm[i].disabled = true
+  }
+  for(let i = 0; i < storyBtns.length; i++) {
+    storyBtns[i].disabled = true
   }
 }
 
