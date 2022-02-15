@@ -24,8 +24,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: pink;
-  font-size: 30px;
+  color: #37FC1D;
+  font-size: 50px;
 }
 
 #page-content {
@@ -39,13 +39,14 @@ body {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 30px;
-
+  font-family: 'Lobster', cursive, sans-serif;
 }
 
 h1 {
   color: #4762FF;
   text-align: center;
   font-size: 40px;
+  font-family: 'Lobster', cursive, sans-serif;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -63,7 +64,7 @@ input.words {
   width: 200px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 div#button-boxes {
@@ -72,6 +73,7 @@ div#button-boxes {
   max-width: 500px;
   margin: auto;
   justify-content: center;
+  font-family: 'Lobster', cursive, sans-serif;
 }
 
 div > button {
