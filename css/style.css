@@ -54,11 +54,61 @@ h1 {
 
 form#input-boxes {
   display: grid;
-  grid-template-columns: 147px 147px 147px;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto auto auto;
-  justify-content: space-evenly;
+  grid-template-areas: 
+  "name noun noun2"
+  "verb verb2 adj"
+  "adj2 adv adv2";
+  justify-content: center;
+  justify-self: center;
   align-items: center;
-  margin: auto;
+  border: 2px solid orange;
+}
+
+#inp1 {
+  grid-area: name;
+  place-self: center;
+}
+
+#inp2 {
+  grid-area: noun;
+  place-self: center;
+}
+
+#inp3 {
+  grid-area: noun2;
+  place-self: center;
+}
+
+#inp4 {
+  grid-area: verb;
+  place-self: center;
+}
+
+#inp5 {
+  grid-area: verb2;
+  place-self: center;
+}
+
+#inp6 {
+  grid-area: adj;
+  place-self: center;
+}
+
+#inp7 {
+  grid-area: adj2;
+  place-self: center;
+}
+
+#inp8 {
+  grid-area: adv;
+  place-self: center;
+}
+
+#inp9 {
+  grid-area: adv2;
+  place-self: center;
 }
 
 input.words {
@@ -75,7 +125,7 @@ div#button-boxes {
   max-width: 500px;
   margin: auto;
   margin-top: 20px;
-  margin-left: 120px;
+  margin-left: 240px;
   justify-content: center;
   align-items: center;
   font-family: 'Lobster', cursive, sans-serif;

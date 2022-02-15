@@ -23,9 +23,6 @@ const adj2 = document.getElementById("inp7")
 const adv = document.getElementById("inp8")
 const adv2 = document.getElementById("inp9")
 
-
-
-
 /*----------------------------- Event Listeners -----------------------------*/ 
 storyBtns.addEventListener("click", (evt) => {
   evt.preventDefault()
@@ -77,9 +74,6 @@ function init() {
   for (let i = 0; i < madForm.length; i++) {
     madForm[i].disabled = true
   }
-  // for (let i = 0; i < storyBtns.length; i++) {
-  //   storyBtns[i].target.disabled = true
-  // }
 }
 
 function render() {
