@@ -74,6 +74,8 @@ div#button-boxes {
   display: flex;
   max-width: 500px;
   margin: auto;
+  margin-top: 20px;
+  margin-left: 120px;
   justify-content: center;
   align-items: center;
   font-family: 'Lobster', cursive, sans-serif;
