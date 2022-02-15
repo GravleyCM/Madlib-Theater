@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: url(/assets/Theater\ Stage.jpeg);
+  background: url(/assets/theater2.jpeg);
   background-size: 100%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell "Helvetica Neue", sans-serif;
   margin: 0;
@@ -44,9 +44,12 @@ body {
 }
 
 h1 {
-  color: #4762FF;
-  text-align: center;
+  /* color: #4762FF; */
   font-size: 40px;
+  background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
   font-family: 'Lobster', cursive, sans-serif;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -117,7 +120,9 @@ button {
 
 #story {
   font-size: 30px;
-  color: #4762FF;
+  background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   width: 50%;
   margin: auto;
   margin-bottom: 20px;
