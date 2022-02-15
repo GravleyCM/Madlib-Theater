@@ -53,10 +53,10 @@ storyBtns.addEventListener("click", (evt) => {
 startBtn.addEventListener("click", (evt) => {
   evt.preventDefault()
   countingDown = setInterval(getCountDown, 1000)
-  for(let i = 0; i < madForm.length; i++) {
+  for (let i = 0; i < madForm.length; i++) {
     madForm[i].disabled = false
   }
-  for(let i = 0; i < storyBtns.length; i++) {
+  for (let i = 0; i < storyBtns.length; i++) {
     storyBtns[i].disabled = false
   }
 })
@@ -64,7 +64,6 @@ startBtn.addEventListener("click", (evt) => {
 resetBtn.addEventListener("click", (evt) => {
   evt.preventDefault()
   resetMadLib()
-  render()
 })
   
   
@@ -78,9 +77,9 @@ function init() {
   for (let i = 0; i < madForm.length; i++) {
     madForm[i].disabled = true
   }
-  for(let i = 0; i < storyBtns.length; i++) {
-    storyBtns[i].disabled = true
-  }
+  // for (let i = 0; i < storyBtns.length; i++) {
+  //   storyBtns[i].target.disabled = true
+  // }
 }
 
 function render() {

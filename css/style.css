@@ -52,14 +52,16 @@ h1 {
 }
 
 form#input-boxes {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 147px 147px 147px;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
   align-items: center;
   margin: auto;
 }
 
 input.words {
-  display: block;
+  display: flex;
   padding: 5px;
   width: 200px;
   margin-bottom: 20px;
@@ -68,11 +70,13 @@ input.words {
 }
 
 div#button-boxes {
-  display: grid;
+  display: flex;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
   max-width: 500px;
   margin: auto;
   justify-content: center;
+  align-items: center;
   font-family: 'Lobster', cursive, sans-serif;
 }
 
