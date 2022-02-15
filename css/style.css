@@ -21,6 +21,9 @@ body {
 }
 
 #timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: pink;
   font-size: 30px;
 }
