@@ -10,6 +10,7 @@ const storyBtns = document.querySelector("#button-boxes")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
 const madForm = document.querySelector("form")
+const inputs = document.querySelectorAll(".words")
 const startBtn = document.getElementById("start")
 const countDown = document.getElementById("timer")
 const title = document.getElementById("title")
@@ -22,6 +23,9 @@ const adj = document.getElementById("inp6")
 const adj2 = document.getElementById("inp7")
 const adv = document.getElementById("inp8")
 const adv2 = document.getElementById("inp9")
+
+
+
 
 /*----------------------------- Event Listeners -----------------------------*/ 
 storyBtns.addEventListener("click", (evt) => {
@@ -49,6 +53,9 @@ storyBtns.addEventListener("click", (evt) => {
 startBtn.addEventListener("click", (evt) => {
   evt.preventDefault()
   countingDown = setInterval(getCountDown, 1000)
+  for(i = 0; i < madForm.length; i++) {
+    madForm[i].disabled = false
+  }
 })
   
 resetBtn.addEventListener("click", (evt) => {
@@ -65,6 +72,9 @@ function init() {
   winner = null
   render()
   getCountDown()
+  for (let i = 0; i < madForm.length; i++) {
+    madForm[i].disabled = true
+  }
 }
 
 function render() {
