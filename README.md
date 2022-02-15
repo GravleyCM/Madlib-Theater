@@ -2,7 +2,7 @@
 MadLibs Theater
 
 ### Getting Started
-(Link to deployed game)
+https://hardcore-minsky-30c49e.netlify.app/
 https://wireframe.cc/MuondQ
 
 ### Rules ###
