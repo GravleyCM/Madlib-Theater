@@ -122,6 +122,7 @@ button {
   width: 50%;
   margin: auto;
   margin-bottom: 20px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -144,7 +145,6 @@ button {
   #input-boxes {
     display: flex;
     flex-direction: column;
-    border: 2px solid yellow;
   }
 
   .words {
@@ -158,5 +158,12 @@ button {
     display: flex;
     place-items: center;
     border: 2px solid green;
+  }
+
+  #story {
+    margin-top: 150px;
+    font-size: 20px;
+    max-height: 100%;
+    width: 100%;
   }
 }

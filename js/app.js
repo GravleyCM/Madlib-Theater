@@ -1,8 +1,8 @@
  /*-------------------------------- Constants --------------------------------*/
-let startTime = 31
-
-/*-------------------------------- Variables --------------------------------*/ 
-let winner, countingDown
+ const storySound = new Audio("../assets/story-sound.wav")
+ /*-------------------------------- Variables --------------------------------*/ 
+ let winner, countingDown
+ let startTime = 31
 
 /*------------------------ Cached Element References ------------------------*/
 const wholePage = document.querySelector("#page-content")
@@ -45,6 +45,7 @@ storyBtns.addEventListener("click", (evt) => {
   startBtn.setAttribute("hidden", true)
   resetBtn.removeAttribute("hidden")
   clearInterval(countingDown)
+  storySound.play()
 })
 
 startBtn.addEventListener("click", (evt) => {
