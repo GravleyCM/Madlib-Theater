@@ -18,6 +18,9 @@ When the game loads press the start button. The start button will begin a countd
 ![Updated screenshot of MadLibs](assets/Screen%20Shot%202022-02-14%20at%2011.35.45%20AM.png)
 
 ![Updated screenshot of Madlibs](assets/Screen%20Shot%202022-02-14%20at%202.47.06%20PM.png)
+
+![Updated screenshot of MadLibs](assets/Screen%20Shot%202022-02-16%20at%203.21.37%20PM.png)
+
 ### Technologies Used
 Html, CSS, JavaScript, Netlify, Bootstrap v5.1.3, Animate.css v4.1.1
 

@@ -59,7 +59,7 @@ h1 {
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto auto auto;
   justify-content: center;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 }
 
 #inp1, #inp2, #inp3, 
@@ -157,7 +157,7 @@ button {
   #button-boxes {
     display: flex;
     place-items: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
   }
 
   #story {
