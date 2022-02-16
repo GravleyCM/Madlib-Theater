@@ -1,5 +1,6 @@
  /*-------------------------------- Constants --------------------------------*/
  const storySound = new Audio("../assets/story-sound.wav")
+ const applause = new Audio("../assets/applause.wav")
  /*-------------------------------- Variables --------------------------------*/ 
  let winner, countingDown
  let startTime = 31
@@ -45,7 +46,7 @@ storyBtns.addEventListener("click", (evt) => {
   startBtn.setAttribute("hidden", true)
   resetBtn.removeAttribute("hidden")
   clearInterval(countingDown)
-  storySound.play()
+  storyEffects()
 })
 
 startBtn.addEventListener("click", (evt) => {
@@ -54,9 +55,7 @@ startBtn.addEventListener("click", (evt) => {
   for (let i = 0; i < madForm.length; i++) {
     madForm[i].disabled = false
   }
-  for (let i = 0; i < storyBtns.length; i++) {
-    storyBtns[i].disabled = false
-  }
+  startEffects()
 })
   
 resetBtn.addEventListener("click", (evt) => {
@@ -105,4 +104,16 @@ function changeWin () {
     title.innerHTML = `YOU WERE TOO SLOW, PLEASE TRY AGAIN`
     resetBtn.removeAttribute("hidden")
   }
+}
+
+function startEffects () {
+  applause.play()
+  applause.volume = .10
+  countDown.className = "animate__animated animate__heartBeat"
+}
+
+function storyEffects () {
+  storySound.play()
+  storySound.volume = .10
+  applause.pause()
 }
