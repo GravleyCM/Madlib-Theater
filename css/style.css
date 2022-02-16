@@ -78,13 +78,10 @@ h1 {
 
 #button-boxes {
   display: flex;
-  max-width: 500px;
-  margin: auto;
+  justify-self: center;
+  /* margin: auto; */
   margin-top: 20px;
-  justify-content: center;
-  align-items: center;
   font-family: 'Lobster', cursive, sans-serif;
-  border: 2px solid purple;
 }
 
 button:hover {
@@ -154,7 +151,6 @@ button {
     margin-top: 20px;
     align-items: center;
     font-family: 'Lobster', cursive, sans-serif;
-    border: 2px solid purple;
   }
 
 
