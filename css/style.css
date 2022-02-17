@@ -169,8 +169,9 @@ button {
 @media only screen and (min-width: 1600px) {
 #input-boxes {
     display: flex;
-    place-content: center;
-    place-items: center;
-    border: 2px solid transparent;
+    width: 775px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
   }
 }
