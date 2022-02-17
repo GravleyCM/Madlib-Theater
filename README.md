@@ -2,8 +2,8 @@
 MadLibs Theater
 
 ### Getting Started
-https://hardcore-minsky-30c49e.netlify.app/
-https://wireframe.cc/MuondQ
+[Link to deployed game on Netlify](https://hardcore-minsky-30c49e.netlify.app/)
+[Link to the origin wireframe](https://wireframe.cc/MuondQ)
 
 ### Rules ###
 When the game loads press the start button. The start button will begin a countdown timer. You have 30 seconds to choose 9 words to build your story. When you choose your nine words click one of the four story buttons. Your story will display on the screen. When you are ready you can press the reset button to try again. If you do not choose nine words and press a story button before 30 seconds a try again screen will display with a reset button.
