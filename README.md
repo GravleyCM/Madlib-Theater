@@ -28,7 +28,7 @@ Progress update
 ![Updated screenshot of MadLibs](assets/Screen%20Shot%202022-02-16%20at%203.21.37%20PM.png)
 
 ### Technologies Used
-Html, CSS, JavaScript, Netlify, Bootstrap v5.1.3, Animate.css v4.1.1
+Html, CSS, JavaScript, Netlify, Bootstrap v5.1.3, Animate.css v4.1.1, CICD.
 
 ### Next Steps 
 Add tooltip for each input
