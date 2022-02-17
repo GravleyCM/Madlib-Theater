@@ -3,7 +3,7 @@
  const applause = new Audio("../assets/applause.wav")
  /*-------------------------------- Variables --------------------------------*/ 
  let winner, countingDown
- let startTime = 2
+ let startTime = 31
 
 /*------------------------ Cached Element References ------------------------*/
 const wholePage = document.querySelector("#page-content")
