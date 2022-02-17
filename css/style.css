@@ -166,16 +166,11 @@ button {
   }
 }
 
-@media only screen and (min-width: 1700px) {
-  #input-boxes {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    border: 2px solid yellow;
-  }
-  
-  #input-boxes, #button-boxes {
+@media only screen and (min-width: 1600px) {
+#input-boxes {
     display: flex;
-    justify-content: space-around;
-    border: 2px solid white;
-  } 
+    place-content: center;
+    place-items: center;
+    border: 2px solid transparent;
+  }
 }
