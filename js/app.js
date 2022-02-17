@@ -3,7 +3,7 @@
  const applause = new Audio("../assets/applause.wav")
  /*-------------------------------- Variables --------------------------------*/ 
  let winner, countingDown
- let startTime = 31
+ let startTime = 2
 
 /*------------------------ Cached Element References ------------------------*/
 const wholePage = document.querySelector("#page-content")
@@ -103,6 +103,7 @@ function changeWin () {
     madForm.setAttribute("hidden", true)
     title.innerHTML = `YOU WERE TOO SLOW, PLEASE TRY AGAIN`
     resetBtn.removeAttribute("hidden")
+    startBtn.setAttribute("hidden", true)
   }
 }
 
