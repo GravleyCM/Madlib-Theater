@@ -118,4 +118,5 @@ function storyEffects () {
   storySound.play()
   storySound.volume = .10
   applause.pause()
+  setInterval(newMadLib.className = "animate__animated animate__jackInTheBox", 1000)
 }
