@@ -168,13 +168,13 @@ button {
   #input-boxes {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto auto auto;
-    place-items: center;
+    grid-template-rows: auto auto auto auto;
   }
   
   #button-boxes {
     display: flex;
     place-items: center;
     margin-top: 20px;
+    margin-left: 175px;
   }
 }
