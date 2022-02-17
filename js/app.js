@@ -1,13 +1,14 @@
- /*-------------------------------- Constants --------------------------------*/
- const storySound = new Audio("../assets/story-sound.wav")
- const applause = new Audio("../assets/applause.wav")
- /*-------------------------------- Variables --------------------------------*/ 
- let winner, countingDown
- let startTime = 31
+/*-------------------------------- Constants --------------------------------*/
+const storySound = new Audio("../assets/story-sound.wav")
+const applause = new Audio("../assets/applause.wav")
+/*-------------------------------- Variables --------------------------------*/ 
+let winner, countingDown
+let startTime = 31
 
 /*------------------------ Cached Element References ------------------------*/
 const wholePage = document.querySelector("#page-content")
 const storyBtns = document.querySelector("#button-boxes")
+const stories = document.querySelectorAll(".stories")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
 const madForm = document.querySelector("form")
@@ -24,7 +25,7 @@ const adj2 = document.getElementById("inp7")
 const adv = document.getElementById("inp8")
 const adv2 = document.getElementById("inp9")
 
-/*----------------------------- Event Listeners -----------------------------*/ 
+/*----------------------------- Event Listeners -----------------------------*/
 storyBtns.addEventListener("click", (evt) => {
   evt.preventDefault()
   let btn = evt.target
@@ -56,13 +57,13 @@ startBtn.addEventListener("click", (evt) => {
     madForm[i].disabled = false
   }
   startEffects()
+  stories.removeAttribute("disabled")
 })
-  
+
 resetBtn.addEventListener("click", (evt) => {
   evt.preventDefault()
   resetMadLib()
 })
-  
   
 /*-------------------------------- Functions --------------------------------*/
 init()
