@@ -2,13 +2,12 @@
 const storySound = new Audio("../assets/story-sound.wav")
 const applause = new Audio("../assets/applause.wav")
 /*-------------------------------- Variables --------------------------------*/ 
-let winner, countingDown
+let countingDown
 let startTime = 31
 
 /*------------------------ Cached Element References ------------------------*/
 const wholePage = document.querySelector("#page-content")
 const storyBtns = document.querySelector("#button-boxes")
-const stories = document.querySelectorAll(".stories")
 const resetBtn = document.querySelector(".reset-button")
 const newMadLib = document.querySelector("#story")
 const madForm = document.querySelector("form")
@@ -19,7 +18,7 @@ const name = document.getElementById("inp1")
 const noun = document.getElementById("inp2")
 const noun2 = document.getElementById("inp3")
 const verb = document.getElementById("inp4")
-const verb2 =document.getElementById("inp5")
+const verb2 = document.getElementById("inp5")
 const adj = document.getElementById("inp6")
 const adj2 = document.getElementById("inp7")
 const adv = document.getElementById("inp8")
@@ -57,7 +56,6 @@ startBtn.addEventListener("click", (evt) => {
     madForm[i].disabled = false
   }
   startEffects()
-  stories.removeAttribute("disabled")
 })
 
 resetBtn.addEventListener("click", (evt) => {
@@ -69,7 +67,6 @@ resetBtn.addEventListener("click", (evt) => {
 init()
   
 function init() {
-  winner = null
   render()
   getCountDown()
   for (let i = 0; i < madForm.length; i++) {
@@ -100,7 +97,6 @@ function getCountDown () {
 
 function changeWin () {
   if (startTime === 0)  {
-    winner = "lost"
     madForm.setAttribute("hidden", true)
     title.innerHTML = `YOU WERE TOO SLOW, PLEASE TRY AGAIN`
     resetBtn.removeAttribute("hidden")
