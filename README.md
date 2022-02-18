@@ -34,4 +34,6 @@ Progress update
 * CICD.
 
 ## Next Steps 
-Add tooltip for each input
+Add tooltip for each input\
+Display an error if any inputs are left blank\
+Emphasize the inputs on each story
